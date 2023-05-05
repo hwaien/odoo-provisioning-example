@@ -4,3 +4,13 @@ odoo:
   ingress:
     enabled: true
     ingressClassName: nginx
+
+nginx-ingress-controller:
+  service:
+    targetPorts:
+      https: http
+    annotations:
+      service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
+      service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
+      service.beta.kubernetes.io/do-loadbalancer-redirect-http-to-https: "true"
+      service.beta.kubernetes.io/do-loadbalancer-disable-lets-encrypt-dns-records: "true"

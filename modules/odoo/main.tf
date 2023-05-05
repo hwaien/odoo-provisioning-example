@@ -12,4 +12,9 @@ resource "helm_release" "odoo" {
     name  = "nginx-ingress-controller.service.annotations.service\\.beta\\.kubernetes\\.io/do-loadbalancer-name"
     value = var.odoo_load_balancer_name
   }
+
+  set {
+    name  = "nginx-ingress-controller.service.annotations.service\\.beta\\.kubernetes\\.io/do-loadbalancer-certificate-id"
+    value = var.odoo_load_balancer_certificate_id
+  }
 }
