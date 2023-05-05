@@ -3,7 +3,7 @@
 
   "features": {
     "ghcr.io/devcontainers/features/terraform:1": {},
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
   },
 
   "remoteUser": "vscode",
