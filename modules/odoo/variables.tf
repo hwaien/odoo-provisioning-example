@@ -45,3 +45,9 @@ variable "odoo_load_balancer_name" {
   type        = string
   default     = "localhost"
 }
+
+variable "odoo_load_balancer_certificate_id" {
+  description = "ID of the load balancer certificate."
+  type        = string
+  default     = ""
+}
