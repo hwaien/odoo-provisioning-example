@@ -1,5 +1,5 @@
 ---
-odoo_domain: "dilly.software"
+odoo_domain: "example.com"
 doks_cluster_region: "sfo3"
 doks_cluster_version: "1.26.3-do.0"
 doks_cluster_pool_node_count: "1"
