@@ -1,14 +1,17 @@
 odoo:
   service:
-    type: ClusterIP
+    type: "ClusterIP"
   ingress:
     enabled: true
-    ingressClassName: nginx
+    ingressClassName: "nginx"
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-body-size: "100m"
+
 
 nginx-ingress-controller:
   service:
     targetPorts:
-      https: http
+      https: "http"
     annotations:
       service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
       service.beta.kubernetes.io/do-loadbalancer-tls-ports: "443"
