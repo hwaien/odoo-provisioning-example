@@ -1,0 +1,3 @@
+---
+odoo_subdomain: "tulip"
+doks_cluster_pool_size: "s-4vcpu-8gb"
