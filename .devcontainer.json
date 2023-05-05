@@ -1,28 +1,11 @@
 {
-  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-lts",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
 
   "features": {
-    "ghcr.io/devcontainers/features/aws-cli:1": {},
-    "kubectl-helm-minikube": {
-      "version": "lts",
-      "helm": "lts",
-      "minikube": "lts"
-    },
-    "ghcr.io/devcontainers/features/terraform:1": {
-      "version": "lts",
-      "tflint": "lts",
-      "terragrunt": "lts"
-    },
-    "ghcr.io/dhoeric/features/terraform-docs:1": {
-      "version": "lts"
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "lts",
-      "dockerDashComposeVersion": "v2"
-    }
+    "ghcr.io/devcontainers/features/terraform:1": {},
+    "ghcr.io/dhoeric/features/terraform-docs:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
 
   "remoteUser": "vscode",
