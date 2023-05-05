@@ -1,6 +1,6 @@
 resource "helm_release" "odoo" {
   name    = "odoo"
-
+  timeout = 900
   chart   = "${path.module}/my-odoo-helm-chart"
 
   set {
