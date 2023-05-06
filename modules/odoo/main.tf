@@ -4,6 +4,11 @@ resource "helm_release" "odoo" {
   chart   = "${path.module}/my-odoo-helm-chart"
 
   set {
+    name  = "odoo.odooEmail"
+    value = var.odoo_email
+  }
+
+  set {
     name  = "odoo.ingress.hostname"
     value = var.odoo_ingress_hostname
   }

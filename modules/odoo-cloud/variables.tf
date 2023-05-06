@@ -1,3 +1,8 @@
+variable "odoo_email" {
+  description = "The email address of the Odoo user."
+  type        = string
+}
+
 variable "odoo_domain" {
   description = "The domain. The 'bar.com' part of 'foo.bar.com'"
   type        = string
