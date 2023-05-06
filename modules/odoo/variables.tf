@@ -34,6 +34,11 @@ variable "kube_cluster_ca_certificate" {
   default     = null
 }
 
+variable "odoo_email" {
+  description = "The email address of the Odoo user."
+  type        = string
+}
+
 variable "odoo_ingress_hostname" {
   description = "Default host for the ingress record."
   type        = string

@@ -1,4 +1,5 @@
 ---
+odoo_email: "admin@example.com"
 odoo_domain: "example.com"
 doks_cluster_region: "sfo3"
 doks_cluster_version: "1.26.3-do.0"

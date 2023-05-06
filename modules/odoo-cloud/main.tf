@@ -37,6 +37,7 @@ resource "digitalocean_kubernetes_cluster" "my_cluster" {
 
 module "odoo" {
   source                            = "../odoo"
+  odoo_email                        = var.odoo_email
   odoo_load_balancer_name           = "${var.odoo_subdomain}-load-balancer"
   odoo_load_balancer_certificate_id = digitalocean_certificate.cert.uuid
   odoo_ingress_hostname             = local.hostname
