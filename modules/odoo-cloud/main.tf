@@ -24,9 +24,11 @@ resource "digitalocean_certificate" "cert" {
 }
 
 resource "digitalocean_kubernetes_cluster" "my_cluster" {
-  name    = "${var.odoo_subdomain}-cluster"
-  region  = var.doks_cluster_region
-  version = var.doks_cluster_version
+  name          = "${var.odoo_subdomain}-cluster"
+  region        = var.doks_cluster_region
+  version       = var.doks_cluster_version
+  auto_upgrade  = true
+  surge_upgrade = true
 
   node_pool {
     name       = "${var.odoo_subdomain}-pool"
