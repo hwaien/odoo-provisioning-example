@@ -10,7 +10,5 @@
 
   "mounts": [
     "source=${localEnv:HOME}/.kube,target=/home/vscode/.kube,type=bind,consistency=cached"
-  ],
-
-  "postCreateCommand": "cd modules/odoo/my-odoo-helm-chart/ && helm dependency update"
+  ]
 }

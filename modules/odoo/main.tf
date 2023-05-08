@@ -1,7 +1,8 @@
 resource "helm_release" "odoo" {
-  name    = "odoo"
-  timeout = 900
-  chart   = "${path.module}/my-odoo-helm-chart"
+  chart             = "${path.module}/my-odoo-helm-chart"
+  name              = "odoo"
+  dependency_update = true
+  timeout           = 900
 
   set {
     name  = "odoo.odooEmail"
